@@ -30,5 +30,11 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://github.com/NickUseGitHub/ga-101#readme"
+  "homepage": "https://github.com/NickUseGitHub/ga-101#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.4.0",
+    "eslint-plugin-react": "^7.14.3",
+    "prettier": "^1.18.2"
+  }
 }
