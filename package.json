@@ -1,0 +1,19 @@
+{
+  "name": "ga-101",
+  "version": "1.0.0",
+  "description": "This is repository sandbox for learning google analytics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NickUseGitHub/ga-101.git"
+  },
+  "author": "Chaiwat Tungtongsoontorn <nickt.tnick@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NickUseGitHub/ga-101/issues"
+  },
+  "homepage": "https://github.com/NickUseGitHub/ga-101#readme"
+}
