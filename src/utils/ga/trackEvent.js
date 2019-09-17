@@ -4,7 +4,13 @@ export default function trackEvent({
   eventLabel,
   ...options
 }) {
-  if (typeof ga !== 'function') return
+  if (typeof window.ga !== 'function') return
 
-  ga('send', 'event', eventCategory, eventAction, eventLabel, ...options)
+  window.ga('send', {
+    hitType: 'event',
+    eventCategory,
+    eventAction,
+    eventLabel,
+    ...options,
+  })
 }
