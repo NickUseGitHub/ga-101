@@ -1,4 +1,5 @@
 import React from 'react'
+import AppGoalBox from './goalBox/AppGoalBox'
 import trackEvent from './utils/ga/trackEvent'
 
 function handleOnClickButtonHello(event) {
@@ -15,6 +16,7 @@ export default function AppBody() {
     <div>
       <h2>This Component just for complete goal</h2>
       <button onClick={handleOnClickButtonHello}>Click Hello Event</button>
+      <AppGoalBox />
     </div>
   )
 }
