@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import logo from './logo.svg'
 import './App.css'
 import AppBody from './AppBody'
+import trackPageview from './utils/ga/trackPageview'
 
 function App() {
+  useEffect(function() {
+    trackPageview({})
+  }, [])
+
   return (
     <div className="App">
       <header className="App-header">
