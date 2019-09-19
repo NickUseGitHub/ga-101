@@ -1,16 +1,16 @@
 export default function trackEvent({
-  eventCategory,
-  eventAction,
-  eventLabel,
+  dlCategory,
+  dlAction,
+  dlLabel,
   ...options
 }) {
-  if (typeof window.ga !== 'function') return
+  if (typeof window.dataLayer === 'undefined') return
 
-  window.ga('send', {
-    hitType: 'event',
-    eventCategory,
-    eventAction,
-    eventLabel,
+  window.dataLayer.push({
+    event: 'trackEvent',
+    dlCategory,
+    dlAction,
+    dlLabel,
     ...options,
   })
 }

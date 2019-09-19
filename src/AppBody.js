@@ -5,9 +5,9 @@ import trackEvent from './utils/ga/trackEvent'
 function handleOnClickButtonHello(event) {
   event.preventDefault()
   trackEvent({
-    eventCategory: 'EventHello',
-    eventAction: 'click',
-    eventLabel: 'Ga101',
+    dlCategory: 'EventHello',
+    dlAction: 'click',
+    dlLabel: 'Ga101',
   })
 }
 
