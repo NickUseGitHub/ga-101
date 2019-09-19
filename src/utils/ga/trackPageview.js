@@ -1,16 +1,16 @@
 export default function trackEvent({
-  dlCategory,
-  dlAction,
-  dlLabel,
+  eventCategory,
+  eventAction,
+  eventLabel,
   ...options
 }) {
   if (typeof window.dataLayer === 'undefined') return
 
   window.dataLayer.push({
-    event: 'trackEvent',
-    dlCategory,
-    dlAction,
-    dlLabel,
+    event: 'trackPageview',
+    eventCategory,
+    eventAction,
+    eventLabel,
     ...options,
   })
 }

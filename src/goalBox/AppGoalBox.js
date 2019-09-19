@@ -11,10 +11,10 @@ export default function AppGoalBox() {
 
     isShowInnerBox === false &&
       trackEvent({
-        eventCategory: 'ButtonBuyClick',
-        eventAction: 'click',
-        eventLabel: 'ButtonBuyClick',
-        eventValue: 1,
+        dlCategory: 'ButtonBuyClick',
+        dlAction: 'click',
+        dlLabel: 'ButtonBuyClick',
+        dlValue: 1,
       })
   }
 
