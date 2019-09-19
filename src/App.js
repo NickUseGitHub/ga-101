@@ -2,11 +2,20 @@ import React, { useEffect } from 'react'
 import logo from './logo.svg'
 import './App.css'
 import AppBody from './AppBody'
-import trackPageview from './utils/ga/trackPageview'
+import { trackPageview, trackExperiment } from './utils/ga'
 
 function App() {
   useEffect(function() {
     trackPageview({})
+
+    setTimeout(function() {
+      trackExperiment('event', 'optimize.callback', {
+        name: 'xjXG2Ud0R-CkjKYc_EWsgw',
+        callback: function(value) {
+          console.log('value from ab value -', value)
+        },
+      })
+    }, 1000)
   }, [])
 
   return (
