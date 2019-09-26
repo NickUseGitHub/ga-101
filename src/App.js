@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import logo from './logo.svg'
 import './App.css'
 
+import { logPageview } from './utils/ga'
+
 function App() {
+  useEffect(function() {
+    logPageview()
+  }, [])
+
   return (
     <div className="App">
       <header className="App-header">
@@ -19,7 +25,7 @@ function App() {
           Learn React
         </a>
       </header>
-      <div class="body-container">Body</div>
+      <div className="body-container">Body</div>
     </div>
   )
 }
