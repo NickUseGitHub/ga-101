@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import logo from './logo.svg'
 import './App.css'
+import AppBody from './AppBody'
 
 import { logPageview } from './utils/ga'
 
@@ -25,7 +26,7 @@ function App() {
           Learn React
         </a>
       </header>
-      <div className="body-container">Body</div>
+      <AppBody />
     </div>
   )
 }
