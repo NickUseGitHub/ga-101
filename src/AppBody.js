@@ -5,9 +5,9 @@ function handleOnClick(event) {
   event.preventDefault()
 
   logEvent({
-    eventCategory: 'nickcategory',
-    eventAction: 'click',
-    eventLabel: 'nickLabel',
+    dlCategory: 'nickcategory',
+    dlAction: 'click',
+    dlLabel: 'nickLabel',
   })
 }
 

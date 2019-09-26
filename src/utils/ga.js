@@ -1,16 +1,19 @@
 export function logPageview() {
-  if (typeof window.ga !== 'function') return
+  if (typeof window.dataLayer !== 'function') return
 
-  window.ga('send', 'pageview')
+  window.dataLayer.push({
+    event: 'trackPageview',
+  })
 }
 
-export function logEvent({
-  eventCategory,
-  eventAction,
-  eventLabel,
-  eventValue,
-}) {
-  if (typeof window.ga !== 'function') return
+export function logEvent({ dlCategory, dlAction, dlLabel, dlValue }) {
+  if (typeof window.dataLayer !== 'object') return
 
-  window.ga('send', 'event', eventCategory, eventAction, eventLabel, eventValue)
+  window.dataLayer.push({
+    event: 'trackEvent',
+    dlCategory,
+    dlAction,
+    dlLabel,
+    ...(!!dlValue ? { dlValue } : {}),
+  })
 }
