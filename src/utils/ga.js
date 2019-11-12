@@ -1,5 +1,5 @@
 export function logPageview() {
-  if (typeof window.dataLayer !== 'function') return
+  if (typeof window.dataLayer !== 'object') return
 
   window.dataLayer.push({
     event: 'trackPageview',
